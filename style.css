@@ -47,6 +47,7 @@ header {
     top: 2px; /* Adjust the top distance as per your layout */
     right: 2px; /* Adjust the right distance to place it properly */
     z-index: 110; /* Ensure it's on top of other elements */
+    
 }
 
 
@@ -282,9 +283,17 @@ span{
 
     .home-img img{
         width: 70vw;
-        margin-top: 4rem;
+        margin-top: -20rem;
+        margin-right: 10rem;
     }
 }
+@media(max-width:995px) {
+    /* Hide the server status section when the screen width is smaller than 995px */
+    .server-status {
+        display: none;
+    }
+}
+
 
 
 .server-status {
@@ -303,6 +312,7 @@ span{
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #9c08ff;
+
 }
 
 #server-info {
